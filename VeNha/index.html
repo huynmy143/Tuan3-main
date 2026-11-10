@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập về nhà - Tuần 3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #f2f5f9;
+            color: #222;
+        }
+
+        #root {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 0 16px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 14px;
+            padding: 28px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, .08);
+        }
+
+        /* ===== Thông tin cá nhân ===== */
+        .profile { text-align: center; }
+        .profile img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #1b6ca8;
+        }
+        .profile h1 { margin: 14px 0 4px; font-size: 28px; color: #1b6ca8; }
+        .profile p  { margin: 4px 0; color: #555; }
+
+        .social {
+            list-style: none;
+            padding: 0;
+            margin: 18px 0 0;
+        }
+        .social li { display: inline-block; margin: 0 6px; }
+        .social a {
+            display: block;
+            width: 44px;
+            height: 44px;
+            line-height: 44px;
+            border-radius: 50%;
+            background: #1b6ca8;
+            color: #fff;
+            font-size: 20px;
+            text-align: center;
+            text-decoration: none;
+            transition: transform .2s, background .2s;
+        }
+        .social a:hover { background: #0f4a77; transform: translateY(-3px); }
+
+        /* ===== Danh sách bài tập ===== */
+        .card h2 { margin: 0 0 16px; font-size: 22px; }
+        .exercises { list-style: none; padding: 0; margin: 0; }
+        .exercises li { margin-bottom: 10px; }
+        .exercises a {
+            display: block;
+            padding: 14px 18px;
+            border-radius: 10px;
+            background: #eef4fa;
+            color: #1b6ca8;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background .2s, padding-left .2s;
+        }
+        .exercises a:hover { background: #1b6ca8; color: #fff; padding-left: 26px; }
+        .exercises span { display: block; font-weight: 400; font-size: 13px; opacity: .8; }
+        .exercises i { width: 24px; }
+
+        footer { text-align: center; color: #888; font-size: 13px; padding-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <section class="card profile">
+            <img src="imgs\QVN02174.jpg" alt="Ảnh cá nhân">
+            <h1>Trần Nữ Huyền My</h1>
+            <p><i class="fas fa-university"></i> Thương mại điện tử,Khoa CNTTKD, UEH</p>
+            <p><i class="fas fa-id-card"></i> MSSV: 31241027201 &nbsp;|&nbsp; Lớp: EE0001</p>
+            <p><i class="fas fa-map-marker-alt"></i> TP. Hồ Chí Minh</p>
+
+            <ul class="social">
+                <li><a href="https://github.com/Hoaian262" title="GitHub" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="mailto:mytran.31241027201@st.ueh.edu.vn" title="Email"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+        </section>
+
+        <!-- DANH SÁCH BÀI TẬP -->
+        <section class="card">
+            <h2><i class="fas fa-book"></i> Các bài tập đã làm</h2>
+            <ul class="exercises">
+                <li><a href="baitap1.html"><i class="fas fa-font"></i> Bài 1<span>Định dạng văn bản: UEH, CNTTKD, text-shadow</span></a></li>
+                <li><a href="baitap2.html"><i class="fas fa-icons"></i> Bài 2<span>Menu ngang và Font Awesome</span></a></li>
+                <li><a href="baitap3.html"><i class="fas fa-server"></i> Bài 3<span>Landing page Shared Hosting</span></a></li>
+                <li><a href="baitap4.html"><i class="fas fa-th"></i> Bài 4<span>My Portfolio (gallery dùng Flexbox)</span></a></li>
+                <li><a href="baitap5.html"><i class="fas fa-columns"></i> Bài 5<span>Bố cục Header / Nav / Main / Footer (float)</span></a></li>
+                <li><a href="css2/css2.html"><i class="fas fa-mask"></i> Bài CSS2 - The Bat Family<span>Danh sách nhân vật, hiệu ứng hover</span></a></li>
+            </ul>
+        </section>
+
+        <footer>&copy; 2026 - Lê Hoài An - Bài tập Phát triển ứng dụng TMĐT</footer>
+    </div>
+</body>
+</html>
